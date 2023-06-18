@@ -1,11 +1,7 @@
 import { Component } from 'react';
 
 class FeedbackStatistics extends Component {
-  state = {
-    good: 0,
-    neutral: 0,
-    bad: 0,
-  };
+
 
   onBtnClick(event) {
     const feedbackType = event.target.innerText.toLowerCase();
