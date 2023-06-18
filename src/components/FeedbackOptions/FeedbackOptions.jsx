@@ -10,7 +10,7 @@ class FeedbackOptions extends Component {
     const { onLeaveFeedback } = this.props;
 
     return (
-      <>
+      <div>
         <button
           className={`${css.btn} ${css.good}`}
           onClick={event => onLeaveFeedback(event)}
@@ -29,7 +29,7 @@ class FeedbackOptions extends Component {
         >
           Bad
         </button>
-      </>
+      </div>
     );
   }
 }
