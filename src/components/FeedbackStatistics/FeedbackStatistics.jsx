@@ -1,16 +1,12 @@
 import { Component } from 'react';
 
 class FeedbackStatistics extends Component {
-
-
   onBtnClick(event) {
     const feedbackType = event.target.innerText.toLowerCase();
 
-    console.log(feedbackType);
     this.setState(prevState => ({
       [feedbackType]: prevState[feedbackType] + 1,
     }));
-    console.log(this.state);
   }
 
   countTotalFeedback() {

@@ -14,11 +14,9 @@ export class App extends Component {
   onBtnClick = event => {
     const feedbackType = event.target.innerText.toLowerCase();
 
-    console.log(feedbackType);
     this.setState(prevState => ({
       [feedbackType]: prevState[feedbackType] + 1,
     }));
-    console.log(this.state);
   };
 
   countTotalFeedback = () => {
